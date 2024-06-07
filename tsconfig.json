@@ -17,7 +17,8 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["vitest/globals"]
   },
-  "include": ["src", "commitlint.config.cjs"]
+  "include": ["src", "commitlint.config.cjs", "vite.config.ts", "vitest.config.ts"]
 }
