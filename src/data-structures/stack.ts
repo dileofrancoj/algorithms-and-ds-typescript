@@ -9,13 +9,8 @@
   pop: Devuelve y elimina el úlitmo elemento de la pila
 
 */
-interface StackProps<T> {
-  length: () => number
-  push: (value: T) => void
-  isEmpty: () => boolean
-  top: () => T | undefined
-  pop: () => T | never
-}
+
+import type { StackProps } from './types/Stack'
 
 /* Nota: se agregan comprobaciones respecto al tamaño en memoria que puede tener la pila */
 export class Stack<T> implements StackProps<T> {
