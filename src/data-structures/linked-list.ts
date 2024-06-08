@@ -94,16 +94,17 @@ export class LinkedList<T> implements Partial<LinkedListProps<T>> {
   }
 }
 
-interface Post {
-  title: string
-}
+/*
+  interface Post {
+    title: string
+  }
+  Possible Implementation
+  const linkedList = new LinkedList<Post>()
 
-const linkedList = new LinkedList<Post>()
-
-console.log('traverse: ', linkedList.traverse())
-linkedList.insertAtEnd({ title: 'Post A' }) // [{ title: 'Post A' }]
-linkedList.insertAtEnd({ title: 'Post B' }) // [{ title: 'Post A' }, {title: 'Post B'}]
-linkedList.insertAtBegin({ title: 'Post C' }) // [{title: 'Post C'} ,{ title: 'Post A' }, {title: 'Post B'}]
-console.log(linkedList.traverse()) // // [{title: 'Post C'} ,{ title: 'Post A' }, {title: 'Post B'}]
-linkedList.search(({ title }) => title === 'Post A')
-linkedList.size() // 3
+  linkedList.insertAtEnd({ title: 'Post A' }) // [{ title: 'Post A' }]
+  linkedList.insertAtEnd({ title: 'Post B' }) // [{ title: 'Post A' }, {title: 'Post B'}]
+  linkedList.insertAtBegin({ title: 'Post C' }) // [{title: 'Post C'} ,{ title: 'Post A' }, {title: 'Post B'}]
+  console.log(linkedList.traverse()) // // [{title: 'Post C'} ,{ title: 'Post A' }, {title: 'Post B'}]
+  linkedList.search(({ title }) => title === 'Post A')
+  linkedList.size() // 3
+*/
