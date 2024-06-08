@@ -15,7 +15,7 @@
         - search
 */
 
-import { type LinkedListProps, Node } from './types/LinkedList'
+import { type LinkedListProps, Node } from '../types/LinkedList'
 
 export class LinkedList<T> implements Partial<LinkedListProps<T>> {
   public head: Node<T> | null = null
