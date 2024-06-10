@@ -1,5 +1,5 @@
+import { Node } from '../../types/LinkedList'
 import { LinkedList } from '../linked-list'
-import { Node } from '../types/LinkedList'
 
 describe('linked list', () => {
   it('should create an instance of LinkedList', () => {
